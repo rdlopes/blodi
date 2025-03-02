@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JetBrains/web-types/master/schema/web-types.json",
+  "name": "blodi",
+  "version": "0.0.0",
+  "description-markup": "markdown",
+  "contributions": {
+    "html": {
+      "elements": [
+        {
+          "name": "blodi-chart",
+          "description": "\n---\n",
+          "doc-url": "",
+          "attributes": [],
+          "events": [],
+          "js": { "properties": [], "events": [] }
+        },
+        {
+          "name": "blodi-diagram",
+          "description": "\n---\n",
+          "doc-url": "",
+          "attributes": [],
+          "events": [],
+          "js": { "properties": [], "events": [] }
+        },
+        {
+          "name": "blodi-update",
+          "description": "PWA update notification.\n---\n",
+          "doc-url": "",
+          "attributes": [
+            { "name": "update-period", "value": { "type": "number" } }
+          ],
+          "events": [],
+          "js": {
+            "properties": [{ "name": "updatePeriod", "type": "number" }],
+            "events": []
+          }
+        },
+        {
+          "name": "blodi-header",
+          "description": "\n---\n",
+          "doc-url": "",
+          "attributes": [],
+          "events": [],
+          "js": { "properties": [], "events": [] }
+        }
+      ]
+    },
+    "css": {
+      "properties": [],
+      "pseudo-elements": []
+    }
+  }
+}

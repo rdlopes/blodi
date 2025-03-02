@@ -1,0 +1,27 @@
+= {documentation}[Blodi] image:{badges}/License-MIT-yellow.svg[link={license},title=MIT License] image:{cicd}/badge.svg[link={cicd},window=_blank]
+:author:        Rui LOPES
+:owner:         rdlopes
+:email:         mailto:rui.d.lopes@me.com
+:project:       blodi
+:key:           {owner}_{project}
+:repo:          https://github.com/{owner}/{project}
+:documentation: https://{owner}.github.io/{project}
+:cicd:          {repo}/actions/workflows/cicd.yaml
+:linkedin:      https://www.linkedin.com/in/rdlopes-fr
+:badges:        https://img.shields.io/badge
+:license:       https://opensource.org/licenses/MIT
+:pwa:           https://fr.wikipedia.org/wiki/Progressive_web_app
+:block-diagram: https://www.tutorialspoint.com/control_systems/control_systems_block_diagrams.htm
+:carbon-ui:     https://carbondesignsystem.com/
+
+link:{pwa}[PWA] application for working with link:{block-diagram}[block diagrams].
+
+== Design System
+
+We used link:{carbon-ui}[Carbon design system] as the foundations for our web components.
+
+== Author
+
+image:{badges}/By_Mail-white?style=social&logo=icloud&label=Rui_LOPES[link={email},window=_blank]
+
+image:{badges}/On_LinkedIn-white?style=social&logo=logmein&label=Rui_LOPES[link={linkedin},window=_blank]

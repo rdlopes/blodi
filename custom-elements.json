@@ -1,0 +1,578 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BlodiHeader",
+          "declaration": {
+            "name": "BlodiHeader",
+            "module": "./ui/blodi-header/blodi-header"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "BlodiChart",
+          "declaration": {
+            "name": "BlodiChart",
+            "module": "./ui/blodi-chart/blodi-chart.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "BlodiUpdate",
+          "declaration": {
+            "name": "BlodiUpdate",
+            "module": "./ui/blodi-update/blodi-update"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/sw.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/editor/editor.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Editor",
+          "members": [
+            {
+              "kind": "method",
+              "name": "buildExample"
+            }
+          ],
+          "superclass": {
+            "name": "Diagram",
+            "package": "diagram-js"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "Editor",
+            "module": "src/editor/editor.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/editor/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "default",
+            "module": "./editor"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/ui/blodi-chart/blodi-chart.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "meta",
+          "default": "{ title: 'Components / Chart', component: 'blodi-chart', render: () => { return html` <blodi-chart></blodi-chart> `; }, } satisfies Meta<BlodiChartProperties>"
+        },
+        {
+          "kind": "variable",
+          "name": "Default",
+          "type": {
+            "text": "StoryObj<BlodiChartProperties>"
+          },
+          "default": "{}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "meta",
+            "module": "src/ui/blodi-chart/blodi-chart.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/ui/blodi-chart/blodi-chart.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/ui/blodi-chart/blodi-chart.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "BlodiChart",
+          "members": [
+            {
+              "kind": "field",
+              "name": "_chartHolder",
+              "type": {
+                "text": "HTMLDivElement"
+              },
+              "privacy": "private",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "_barChart",
+              "type": {
+                "text": "StackedAreaChart | undefined"
+              },
+              "privacy": "private"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "blodi-chart",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BlodiChart",
+          "declaration": {
+            "name": "BlodiChart",
+            "module": "src/ui/blodi-chart/blodi-chart.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "blodi-chart",
+          "declaration": {
+            "name": "BlodiChart",
+            "module": "src/ui/blodi-chart/blodi-chart.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/ui/blodi-diagram/blodi-diagram.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "meta",
+          "default": "{ title: 'Components / Diagram', component: 'blodi-diagram', render: () => { return html` <blodi-diagram></blodi-diagram> `; }, } satisfies Meta<BlodiDiagramProperties>"
+        },
+        {
+          "kind": "variable",
+          "name": "Default",
+          "type": {
+            "text": "StoryObj<BlodiDiagramProperties>"
+          },
+          "default": "{}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "meta",
+            "module": "src/ui/blodi-diagram/blodi-diagram.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/ui/blodi-diagram/blodi-diagram.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/ui/blodi-diagram/blodi-diagram.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "BlodiDiagram",
+          "members": [
+            {
+              "kind": "field",
+              "name": "_diagramHolder",
+              "type": {
+                "text": "HTMLDivElement"
+              },
+              "privacy": "private",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "_editor",
+              "type": {
+                "text": "Editor"
+              },
+              "privacy": "private"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "blodi-diagram",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BlodiDiagram",
+          "declaration": {
+            "name": "BlodiDiagram",
+            "module": "src/ui/blodi-diagram/blodi-diagram.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "blodi-diagram",
+          "declaration": {
+            "name": "BlodiDiagram",
+            "module": "src/ui/blodi-diagram/blodi-diagram.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/ui/blodi-update/blodi-update.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "meta",
+          "default": "{ title: 'Components / Update Notification', component: 'blodi-update', args: { needsRefresh: false, offlineReady: false, }, render: (args) => { return html` <blodi-update ._needsRefresh=\"${args.needsRefresh}\" ._offlineReady=\"${args.offlineReady}\" ></blodi-update> `; }, } satisfies Meta<BlodiUpdateProperties>"
+        },
+        {
+          "kind": "variable",
+          "name": "NeedsRefresh",
+          "type": {
+            "text": "StoryObj<BlodiUpdateProperties>"
+          },
+          "default": "{ args: { needsRefresh: true, }, }"
+        },
+        {
+          "kind": "variable",
+          "name": "OfflineReady",
+          "type": {
+            "text": "StoryObj<BlodiUpdateProperties>"
+          },
+          "default": "{ args: { offlineReady: true, }, }"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "meta",
+            "module": "src/ui/blodi-update/blodi-update.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "NeedsRefresh",
+          "declaration": {
+            "name": "NeedsRefresh",
+            "module": "src/ui/blodi-update/blodi-update.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "OfflineReady",
+          "declaration": {
+            "name": "OfflineReady",
+            "module": "src/ui/blodi-update/blodi-update.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/ui/blodi-update/blodi-update.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "PWA update notification.",
+          "name": "BlodiUpdate",
+          "members": [
+            {
+              "kind": "field",
+              "name": "updatePeriod",
+              "type": {
+                "text": "number"
+              },
+              "attribute": "update-period",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "_needsRefresh",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "protected",
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "_offlineReady",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "protected",
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "_swActivated",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "private",
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "_updateServiceWorker",
+              "type": {
+                "text": "undefined | ((reloadPage?: boolean) => Promise<void>)"
+              },
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "_notificationPopup",
+              "type": {
+                "text": "CDSActionableNotification | undefined"
+              },
+              "privacy": "protected"
+            },
+            {
+              "kind": "method",
+              "name": "_message",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "_onBadgeClosed",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "_onRegisteredSW",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "swUrl",
+                  "type": {
+                    "text": "string"
+                  }
+                },
+                {
+                  "name": "serviceWorkerRegistration",
+                  "optional": true,
+                  "type": {
+                    "text": "ServiceWorkerRegistration"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_reloadApp",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "_registerPeriodicSync",
+              "privacy": "private",
+              "parameters": [
+                {
+                  "name": "swUrl",
+                  "type": {
+                    "text": "string"
+                  }
+                },
+                {
+                  "name": "serviceWorkerRegistration",
+                  "type": {
+                    "text": "ServiceWorkerRegistration"
+                  }
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "update-period",
+              "type": {
+                "text": "number"
+              },
+              "fieldName": "updatePeriod"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "blodi-update",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BlodiUpdate",
+          "declaration": {
+            "name": "BlodiUpdate",
+            "module": "src/ui/blodi-update/blodi-update.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "blodi-update",
+          "declaration": {
+            "name": "BlodiUpdate",
+            "module": "src/ui/blodi-update/blodi-update.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/ui/blodi-header/blodi-header.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "meta",
+          "default": "{ title: 'Components / Header', component: 'blodi-header', render: () => { return html` <blodi-header></blodi-header> `; }, } satisfies Meta<BlodiHeaderProperties>"
+        },
+        {
+          "kind": "variable",
+          "name": "Default",
+          "type": {
+            "text": "StoryObj<BlodiHeaderProperties>"
+          },
+          "default": "{}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "meta",
+            "module": "src/ui/blodi-header/blodi-header.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/ui/blodi-header/blodi-header.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/ui/blodi-header/blodi-header.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "BlodiHeader",
+          "members": [
+            {
+              "kind": "field",
+              "name": "_switcherPanel",
+              "type": {
+                "text": "CDSHeaderPanel"
+              },
+              "privacy": "private",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "_globalAction",
+              "type": {
+                "text": "CDSHeaderGlobalAction"
+              },
+              "privacy": "private",
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "_toggleSwitcherPanel",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              }
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "blodi-header",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BlodiHeader",
+          "declaration": {
+            "name": "BlodiHeader",
+            "module": "src/ui/blodi-header/blodi-header.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "blodi-header",
+          "declaration": {
+            "name": "BlodiHeader",
+            "module": "src/ui/blodi-header/blodi-header.ts"
+          }
+        }
+      ]
+    }
+  ]
+}

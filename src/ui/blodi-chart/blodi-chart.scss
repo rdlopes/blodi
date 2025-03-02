@@ -1,0 +1,6 @@
+@use '@carbon/charts/scss/index.scss';
+@use '@carbon/layout';
+
+.cds--content {
+  padding: layout.$spacing-05
+}
