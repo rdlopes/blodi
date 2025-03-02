@@ -19,7 +19,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    name: 'Storybook'
+    name: 'Build & Deploy'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,9 +27,7 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
-      - run: |
-          npm run build
-      - run: npm run build-storybook
+      - run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -37,7 +35,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'storybook-static'
+          path: 'dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

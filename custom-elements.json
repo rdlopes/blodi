@@ -25,6 +25,14 @@
         },
         {
           "kind": "js",
+          "name": "BlodiDiagram",
+          "declaration": {
+            "name": "BlodiDiagram",
+            "module": "./ui/blodi-diagram/blodi-diagram.ts"
+          }
+        },
+        {
+          "kind": "js",
           "name": "BlodiUpdate",
           "declaration": {
             "name": "BlodiUpdate",
@@ -172,6 +180,108 @@
           "declaration": {
             "name": "BlodiChart",
             "module": "src/ui/blodi-chart/blodi-chart.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/ui/blodi-header/blodi-header.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "meta",
+          "default": "{ title: 'Components / Header', component: 'blodi-header', render: () => { return html` <blodi-header></blodi-header> `; }, } satisfies Meta<BlodiHeaderProperties>"
+        },
+        {
+          "kind": "variable",
+          "name": "Default",
+          "type": {
+            "text": "StoryObj<BlodiHeaderProperties>"
+          },
+          "default": "{}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "meta",
+            "module": "src/ui/blodi-header/blodi-header.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/ui/blodi-header/blodi-header.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/ui/blodi-header/blodi-header.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "BlodiHeader",
+          "members": [
+            {
+              "kind": "field",
+              "name": "_switcherPanel",
+              "type": {
+                "text": "CDSHeaderPanel"
+              },
+              "privacy": "private",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "_globalAction",
+              "type": {
+                "text": "CDSHeaderGlobalAction"
+              },
+              "privacy": "private",
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "_toggleSwitcherPanel",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "void"
+                }
+              }
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "blodi-header",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BlodiHeader",
+          "declaration": {
+            "name": "BlodiHeader",
+            "module": "src/ui/blodi-header/blodi-header.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "blodi-header",
+          "declaration": {
+            "name": "BlodiHeader",
+            "module": "src/ui/blodi-header/blodi-header.ts"
           }
         }
       ]
@@ -468,108 +578,6 @@
           "declaration": {
             "name": "BlodiUpdate",
             "module": "src/ui/blodi-update/blodi-update.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/ui/blodi-header/blodi-header.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "meta",
-          "default": "{ title: 'Components / Header', component: 'blodi-header', render: () => { return html` <blodi-header></blodi-header> `; }, } satisfies Meta<BlodiHeaderProperties>"
-        },
-        {
-          "kind": "variable",
-          "name": "Default",
-          "type": {
-            "text": "StoryObj<BlodiHeaderProperties>"
-          },
-          "default": "{}"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "name": "meta",
-            "module": "src/ui/blodi-header/blodi-header.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Default",
-          "declaration": {
-            "name": "Default",
-            "module": "src/ui/blodi-header/blodi-header.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/ui/blodi-header/blodi-header.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "BlodiHeader",
-          "members": [
-            {
-              "kind": "field",
-              "name": "_switcherPanel",
-              "type": {
-                "text": "CDSHeaderPanel"
-              },
-              "privacy": "private",
-              "readonly": true
-            },
-            {
-              "kind": "field",
-              "name": "_globalAction",
-              "type": {
-                "text": "CDSHeaderGlobalAction"
-              },
-              "privacy": "private",
-              "readonly": true
-            },
-            {
-              "kind": "method",
-              "name": "_toggleSwitcherPanel",
-              "privacy": "private",
-              "return": {
-                "type": {
-                  "text": "void"
-                }
-              }
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "blodi-header",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "BlodiHeader",
-          "declaration": {
-            "name": "BlodiHeader",
-            "module": "src/ui/blodi-header/blodi-header.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "blodi-header",
-          "declaration": {
-            "name": "BlodiHeader",
-            "module": "src/ui/blodi-header/blodi-header.ts"
           }
         }
       ]

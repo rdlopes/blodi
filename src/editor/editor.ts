@@ -80,7 +80,6 @@ export default class Editor extends Diagram {
       canvas: {
         container: options.container,
       },
-      propertiesPanel: { parent: '#properties' },
       modules: [
         ...builtinModules,
         ...customModules,

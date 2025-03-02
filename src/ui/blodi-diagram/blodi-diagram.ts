@@ -14,11 +14,11 @@ export class BlodiDiagram extends LitElement {
   private _editor!: Editor
 
   protected firstUpdated(_changedProperties: PropertyValues) {
-    super.firstUpdated(_changedProperties);
     this._editor = new Editor({
       container: this._diagramHolder,
     });
     this._editor.buildExample();
+    super.firstUpdated(_changedProperties);
   }
 
   render() {

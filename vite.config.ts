@@ -32,11 +32,11 @@ export default defineConfig({
       injectManifest: {
         globPatterns: ['**/*.{js,css,html,svg,png,ico}'],
         sourcemap: true,
-        maximumFileSizeToCacheInBytes: 5_000_000,
+        maximumFileSizeToCacheInBytes: 6_000_000,
       },
       devOptions: {
         disableRuntimeConfig: process.env.NODE_ENV === 'development',
-        enabled: process.env.NODE_ENV === 'production',
+        enabled: true,
         navigateFallback: 'index.html',
         suppressWarnings: true,
         type: 'module',

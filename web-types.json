@@ -15,6 +15,14 @@
           "js": { "properties": [], "events": [] }
         },
         {
+          "name": "blodi-header",
+          "description": "\n---\n",
+          "doc-url": "",
+          "attributes": [],
+          "events": [],
+          "js": { "properties": [], "events": [] }
+        },
+        {
           "name": "blodi-diagram",
           "description": "\n---\n",
           "doc-url": "",
@@ -34,14 +42,6 @@
             "properties": [{ "name": "updatePeriod", "type": "number" }],
             "events": []
           }
-        },
-        {
-          "name": "blodi-header",
-          "description": "\n---\n",
-          "doc-url": "",
-          "attributes": [],
-          "events": [],
-          "js": { "properties": [], "events": [] }
         }
       ]
     },
