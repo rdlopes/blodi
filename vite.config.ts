@@ -5,6 +5,7 @@ import {litStyleLoader, litTemplateLoader} from '@mordech/vite-lit-loader';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/blodi/',
   server: {
     host: '0.0.0.0',
     port: 3000,

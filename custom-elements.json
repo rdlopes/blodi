@@ -186,6 +186,97 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/ui/blodi-diagram/blodi-diagram.stories.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "meta",
+          "default": "{ title: 'Components / Diagram', component: 'blodi-diagram', render: () => { return html` <blodi-diagram></blodi-diagram> `; }, } satisfies Meta<BlodiDiagramProperties>"
+        },
+        {
+          "kind": "variable",
+          "name": "Default",
+          "type": {
+            "text": "StoryObj<BlodiDiagramProperties>"
+          },
+          "default": "{}"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "meta",
+            "module": "src/ui/blodi-diagram/blodi-diagram.stories.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "src/ui/blodi-diagram/blodi-diagram.stories.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/ui/blodi-diagram/blodi-diagram.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "BlodiDiagram",
+          "members": [
+            {
+              "kind": "field",
+              "name": "_diagramHolder",
+              "type": {
+                "text": "HTMLDivElement"
+              },
+              "privacy": "private",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "_editor",
+              "type": {
+                "text": "Editor"
+              },
+              "privacy": "private"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "blodi-diagram",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BlodiDiagram",
+          "declaration": {
+            "name": "BlodiDiagram",
+            "module": "src/ui/blodi-diagram/blodi-diagram.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "blodi-diagram",
+          "declaration": {
+            "name": "BlodiDiagram",
+            "module": "src/ui/blodi-diagram/blodi-diagram.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/ui/blodi-header/blodi-header.stories.ts",
       "declarations": [
         {
@@ -282,97 +373,6 @@
           "declaration": {
             "name": "BlodiHeader",
             "module": "src/ui/blodi-header/blodi-header.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/ui/blodi-diagram/blodi-diagram.stories.ts",
-      "declarations": [
-        {
-          "kind": "variable",
-          "name": "meta",
-          "default": "{ title: 'Components / Diagram', component: 'blodi-diagram', render: () => { return html` <blodi-diagram></blodi-diagram> `; }, } satisfies Meta<BlodiDiagramProperties>"
-        },
-        {
-          "kind": "variable",
-          "name": "Default",
-          "type": {
-            "text": "StoryObj<BlodiDiagramProperties>"
-          },
-          "default": "{}"
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "name": "meta",
-            "module": "src/ui/blodi-diagram/blodi-diagram.stories.ts"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "Default",
-          "declaration": {
-            "name": "Default",
-            "module": "src/ui/blodi-diagram/blodi-diagram.stories.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/ui/blodi-diagram/blodi-diagram.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "BlodiDiagram",
-          "members": [
-            {
-              "kind": "field",
-              "name": "_diagramHolder",
-              "type": {
-                "text": "HTMLDivElement"
-              },
-              "privacy": "private",
-              "readonly": true
-            },
-            {
-              "kind": "field",
-              "name": "_editor",
-              "type": {
-                "text": "Editor"
-              },
-              "privacy": "private"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "tagName": "blodi-diagram",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "BlodiDiagram",
-          "declaration": {
-            "name": "BlodiDiagram",
-            "module": "src/ui/blodi-diagram/blodi-diagram.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "blodi-diagram",
-          "declaration": {
-            "name": "BlodiDiagram",
-            "module": "src/ui/blodi-diagram/blodi-diagram.ts"
           }
         }
       ]

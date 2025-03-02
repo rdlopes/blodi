@@ -15,7 +15,7 @@
           "js": { "properties": [], "events": [] }
         },
         {
-          "name": "blodi-header",
+          "name": "blodi-diagram",
           "description": "\n---\n",
           "doc-url": "",
           "attributes": [],
@@ -23,7 +23,7 @@
           "js": { "properties": [], "events": [] }
         },
         {
-          "name": "blodi-diagram",
+          "name": "blodi-header",
           "description": "\n---\n",
           "doc-url": "",
           "attributes": [],
